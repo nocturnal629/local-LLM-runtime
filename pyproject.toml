@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-llm-runtime"
+version = "0.1.0"
+description = "General-purpose local LLM inference infrastructure (GPU-backed), reusable across local AI projects."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.141.1",
+    "uvicorn[standard]==0.52.4",
+    "pydantic==2.13.5",
+    "pyyaml==6.0.3",
+    "requests==2.34.2",
+    "nvidia-ml-py==13.610.43",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

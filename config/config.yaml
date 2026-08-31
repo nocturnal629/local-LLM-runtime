@@ -1,0 +1,17 @@
+# Configuration for local-LLM-runtime.
+# Change `model.name` / `runtime` here to swap models or backends without touching code.
+
+runtime: ollama
+
+model:
+  name: llama3.1:8b
+  context_length: 8192
+
+generation:
+  temperature: 0.7
+  max_tokens: 1024
+
+runtime_settings:
+  ollama:
+    host: http://localhost:11434
+    keep_alive: 5m

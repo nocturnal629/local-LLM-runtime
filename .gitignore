@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Virtual environments
+.venv/
+
+# Local model caches / weights (Ollama, Hugging Face, GGUF files)
+models/
+*.gguf
+*.safetensors
+*.bin
+.ollama/
+
